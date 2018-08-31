@@ -8,6 +8,7 @@ var logger = require('morgan');
 //var usersRouter = require('./routes/users');
 
 var app = express();
+mongoose.connect('mongodb://YIN:yinf0913@ds239692.mlab.com:39692/to_do_db');
 var api = require('./routes/index');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
